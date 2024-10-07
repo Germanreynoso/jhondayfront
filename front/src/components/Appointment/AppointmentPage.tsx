@@ -70,7 +70,7 @@ const CartPage = () => {
       return;
     }
 
-    const idproducts = cart.map((product) => product.id);
+    const idproducts = cart.map((product: { id: any; }) => Number(product.id));
     try {
       const response = await createOrder(idproducts, userData.token);
       setModalContent({
