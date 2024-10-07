@@ -1,13 +1,12 @@
-import Login from "@/components/Login/Login";
-import { ILogin } from "@/interfaces/LoginRegister";
 import React from "react";
+import Login from "@/components/Login/Login";
 
-const login = (dataUser: ILogin = { /* valores por defecto aquí */ }) => {
+const LoginPage = () => {
   return (
     <div>
-      <Login dataUser={dataUser} />
+      <Login />
     </div>
   );
 };
 
-export default login;
+export default LoginPage;
